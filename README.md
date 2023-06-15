@@ -20,7 +20,7 @@ git clone https://github.com/mrsayan/CareerCarve-Assignment.git
 #### For Backend
 2. Navigate to the project directory: `cd Backend`
 #### Set Up the Environment
-3. Create a new file named .env in the project root directory.
+3. Create a new file named config.env in `config` directory.
 4. Define the required environment variables in the .env file. For example:
 ```
 PORT=5253
