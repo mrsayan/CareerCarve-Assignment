@@ -11,6 +11,11 @@ This project provides a REST API for a questionnaire system that allows users to
 + Node.js  + Express.js + MongoDB (with Mongoose) 
 + Argon2 for Password Encryption 
 + JSON Web Tokens (JWT) for Authentication
+
+## Deployment
+The API is deployed on Render and can be accessed at https://questionnaire-lqcy.onrender.com/api/
+
+-----
 ## Running the Project
 To run the project locally, follow the steps below:
 1. Clone the repository to your local machine using the following command:
@@ -20,14 +25,25 @@ git clone https://github.com/mrsayan/CareerCarve-Assignment.git
 #### For Backend
 2. Navigate to the project directory: `cd Backend`
 #### Set Up the Environment
-3. Create a new file named config.env in `config` directory.
-4. Define the required environment variables in the .env file. For example:
+3. Create a new file named `config.env` in `config` directory.
+4. Define the required environment variables in the `.env` file. For example:
 ```
 PORT=5253
 MONGO_URI=mongodb://localhost:27017/DB_NAME
 JWT_SECRET=Wzvn77gGRZzNeXvUhOmiqt456kF.....
 JWT_EXPIRE=30d
 ```
+#### Docker
+
+Run the following command to build the Docker image:
+```
+docker build -t questionnaire-api .
+```
+Run the Docker container using the following command:
+```
+docker run -p 3030:3030 questionnaire-api
+```
+**`OR`**
 #### Install Dependencies
 5. Install the project dependencies by running the following command:
 ```
