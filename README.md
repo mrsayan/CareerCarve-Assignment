@@ -41,8 +41,8 @@ npm start
 
 The API should now be running at http://localhost:3030 by default.
 
-## API Reference in screenshots/API.md
-For the detailed API documentation, please refer to the [API Reference](ScreenShots/API.md), where I have attached the Postman collection and environment files for testing the API.
+## API Endpoints
+For the detailed API documentation, please refer to the [API Reference](ScreenShots/API.md), where I have attached the Postman collection and environment files for testing the API with screenshots.
 
 - ### Welcome
 ```
@@ -91,6 +91,17 @@ POST /api/login
 {
     "success": true,
     "message": "ara ara"
+}
+```
+- ### Logout
+```
+POST /api/logout
+```
+#### Response Body
+```
+{
+    "success": true,
+    "message": "Logged out successfully"
 }
 ```
 - ### Edit Phone Number
